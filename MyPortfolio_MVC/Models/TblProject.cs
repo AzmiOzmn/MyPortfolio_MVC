@@ -19,6 +19,7 @@ namespace MyPortfolio_MVC.Models
         public string ImageUrl { get; set; }
         public string Description { get; set; }
         public Nullable<int> CategoryId { get; set; }
+        public string GitHubUrl { get; set; }
     
         public virtual TblCategory TblCategory { get; set; }
     }

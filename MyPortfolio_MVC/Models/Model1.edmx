@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="MyPortfolioDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="MyPortfolioDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -100,6 +100,7 @@
           <Property Name="ImageUrl" Type="nvarchar(max)" />
           <Property Name="Description" Type="nvarchar" MaxLength="250" />
           <Property Name="CategoryId" Type="int" />
+          <Property Name="GitHubUrl" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="TblSocialMedias">
           <Key>
@@ -149,8 +150,7 @@
             <End Role="TblProjects" EntitySet="TblProjects" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="MyPortfolioDbModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -251,6 +251,7 @@
           <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
           <Property Name="CategoryId" Type="Int32" />
           <NavigationProperty Name="TblCategory" Relationship="Self.FK_TblProjects_TblCategories" FromRole="TblProjects" ToRole="TblCategories" />
+          <Property Name="GitHubUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="TblSocialMedia">
           <Key>
@@ -404,6 +405,7 @@
           <EntitySetMapping Name="TblProjects">
             <EntityTypeMapping TypeName="MyPortfolioDbModel.TblProject">
               <MappingFragment StoreEntitySet="TblProjects">
+                <ScalarProperty Name="GitHubUrl" ColumnName="GitHubUrl" />
                 <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
