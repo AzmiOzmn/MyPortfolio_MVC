@@ -28,7 +28,7 @@ namespace MyPortfolio_MVC.Controllers
         {
             db.TblCategories.Add(category);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index"); 
         }
     }
 }
