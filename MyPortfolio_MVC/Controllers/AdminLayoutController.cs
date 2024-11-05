@@ -13,5 +13,10 @@ namespace MyPortfolio_MVC.Controllers
         {
             return View();
         }
+
+        public PartialViewResult AdminLayoutHead() 
+        {
+            return PartialView();
+        }
     }
 }
