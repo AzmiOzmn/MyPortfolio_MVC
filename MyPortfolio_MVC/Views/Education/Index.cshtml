@@ -1,0 +1,48 @@
+﻿@model List<MyPortfolio_MVC.Models.TblEducation>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+    int count = 0;
+}
+
+<h2>Eğitim Hayatım </h2>
+
+<br>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <th>#</th>
+        <th>Okul Adı</th>
+        <th>Bölüm </th>
+        <th>Başlangıç</th>
+        <th>Bitiş</th>
+        <th>Açıklama</th>
+        <th>Derece</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        count++; 
+
+        <tr>
+
+            <th>@count</th>
+            <td>@item.SchoolName</td>
+            <td>@item.Departman</td>
+            <td>@item.StartDate.Value.ToShortDateString()</td>
+            <td>@(String.IsNullOrEmpty(item.EndDate?.ToString()) ? "Devam Ediyor" : item.EndDate?.ToShortDateString() )</td>
+            <td>@item.Description</td>
+            <td>@item.Degree</td>
+
+            <td><a href="/Education/DeleteEducation/@item.EducationId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Education/Update-Education/@item.EducationId" class="btn btn-outline-info">Güncelle</a></td>
+
+
+        </tr> 
+        }
+    
+</table>
+<br>
+<a href="/Education/CreateEducation" class="btn btn-outline-success ">Yeni Eğitim Ekle</a>

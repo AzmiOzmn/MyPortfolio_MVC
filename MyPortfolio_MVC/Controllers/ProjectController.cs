@@ -29,6 +29,8 @@ namespace MyPortfolio_MVC.Controllers
             return View(projects);
         }
 
+        //IList IEnumerable ICollection List Araştır .
+
         [HttpGet]
         public ActionResult CreateProject()
         {

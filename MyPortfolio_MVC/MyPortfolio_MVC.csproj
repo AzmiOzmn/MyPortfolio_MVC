@@ -130,6 +130,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Global.asax.cs">
@@ -389,6 +390,12 @@
     <Content Include="Views\Project\CreateProject.cshtml" />
     <Content Include="Views\Project\UpdateProject.cshtml" />
     <Content Include="Views\AdminLayout\AdminLayoutHead.cshtml" />
+    <Content Include="Views\AdminLayout\AdminLayoutSpinner.cshtml" />
+    <Content Include="Views\AdminLayout\AdminLayoutSidebar.cshtml" />
+    <Content Include="Views\AdminLayout\AdminLayoutNavbar.cshtml" />
+    <Content Include="Views\AdminLayout\AdminLayoutFooter.cshtml" />
+    <Content Include="Views\AdminLayout\AdminLayoutScripts.cshtml" />
+    <Content Include="Views\Education\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
