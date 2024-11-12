@@ -15,7 +15,7 @@ namespace MyPortfolio_MVC.Controllers
         {
             var values = db.TblCategories.ToList();
             return View(values);
-        }
+        } 
 
         [HttpGet]
         public ActionResult CreateCategory()
