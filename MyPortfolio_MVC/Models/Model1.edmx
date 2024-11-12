@@ -56,8 +56,8 @@
           <Property Name="EducationId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="SchoolName" Type="nvarchar" MaxLength="100" />
           <Property Name="Departman" Type="nvarchar" MaxLength="100" />
-          <Property Name="StartDate" Type="datetime" />
-          <Property Name="EndDate" Type="datetime" />
+          <Property Name="StartDate" Type="date" Nullable="false" />
+          <Property Name="EndDate" Type="date" />
           <Property Name="Description" Type="nvarchar" MaxLength="100" />
           <Property Name="Degree" Type="nvarchar" MaxLength="25" />
         </EntityType>
@@ -206,8 +206,8 @@
           <Property Name="EducationId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="SchoolName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Departman" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="StartDate" Type="DateTime" Precision="3" />
-          <Property Name="EndDate" Type="DateTime" Precision="3" />
+          <Property Name="StartDate" Type="DateTime" Precision="0" Nullable="false" />
+          <Property Name="EndDate" Type="DateTime" Precision="0" />
           <Property Name="Description" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Degree" Type="String" MaxLength="25" FixedLength="false" Unicode="true" />
         </EntityType>

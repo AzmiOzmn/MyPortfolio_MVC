@@ -31,13 +31,13 @@
             <th>@count</th>
             <td>@item.SchoolName</td>
             <td>@item.Departman</td>
-            <td>@item.StartDate.Value.ToShortDateString()</td>
+            <td>@item.StartDate.ToShortDateString()</td>
             <td>@(String.IsNullOrEmpty(item.EndDate?.ToString()) ? "Devam Ediyor" : item.EndDate?.ToShortDateString() )</td>
             <td>@item.Description</td>
             <td>@item.Degree</td>
 
             <td><a href="/Education/DeleteEducation/@item.EducationId" class="btn btn-outline-danger">Sil</a></td>
-            <td><a href="/Education/Update-Education/@item.EducationId" class="btn btn-outline-info">Güncelle</a></td>
+            <td><a href="/Education/UpdateEducation/@item.EducationId" class="btn btn-outline-info">Güncelle</a></td>
 
 
         </tr> 
