@@ -85,38 +85,9 @@
 
             <!-- ### intro
             ================================================== -->
-            <section id="intro" class="s-intro target-section">
+        @Html.Action("DefaultBanner")
 
-                <div class="row intro-content wide">
-
-                    <div class="column">
-                        <div class="text-pretitle with-line">
-                            Hello World
-                        </div>
-
-                        <h1 class="text-huge-title">
-                            I am Luther, <br>
-                            a digital designer <br>
-                            & frontend <br>
-                            developer based <br>
-                            in Somewhere.
-                        </h1>
-                    </div>
-
-                    <ul class="intro-social">
-                        <li><a href="#0">Behance</a></li>
-                        <li><a href="#0">Twitter</a></li>
-                        <li><a href="#0">Dribbble</a></li>
-                        <li><a href="#0">Instagram</a></li>
-                    </ul>
-
-                </div> <!-- end intro content -->
-
-                <a href="#about" class="intro-scrolldown smoothscroll">
-                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" /></svg>
-                </a>
-
-            </section> <!-- end s-intro -->
+             <!-- end s-intro -->
             <!-- ### about
             ================================================== -->
             <section id="about" class="s-about target-section">
@@ -148,103 +119,54 @@
                     </div>
                 </div> <!-- about-info -->
 
-
-                <div class="row about-expertise" data-animate-block>
-                    <div class="column lg-12">
-
-                        <h2 class="text-pretitle" data-animate-el>Expertise</h2>
-
-                        <ul class="skills-list h1" data-animate-el>
-                            <li>Visual Design</li>
-                            <li>Branding Identity</li>
-                            <li>UI Design</li>
-                            <li>Product Design</li>
-                            <li>Prototyping</li>
-                            <li>Illustration</li>
-                        </ul>
-
-                    </div>
-                </div> <!-- end about-expertise -->
+             @Html.Action("DefaultExpertise")
+                 <!-- end about-expertise -->
 
 
-                <div class="row about-timelines" data-animate-block>
+            <div class="row about-timelines" data-animate-block>
 
-                    <div class="column lg-6 tab-12">
+                @Html.Action("DefaultExperience")  <!-- end column -->
 
-                        <h2 class="text-pretitle" data-animate-el>
-                            Experience
-                        </h2>
 
-                        <div class="timeline" data-animate-el>
+                <div class="column lg-6 tab-12">
 
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">
-                                        Dropbox</h3>
-                                        <h5 class="timeline__meta">Product Designer</h5>
-                                        <p class="timeline__timeframe">August 2019 - Present</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
+                    <h2 class="text-pretitle" data-animate-el>
+                        Education
+                    </h2>
+
+                    <div class="timeline" data-animate-el>
+
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <h4 class="timeline__title">
+                                    University of Life</h3>
+                                    <h5 class="timeline__meta">Master in Graphic Design</h5>
+                                    <p class="timeline__timeframe">April 2015</p>
                             </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">Microsoft</h4>
-                                    <h5 class="timeline__meta">Frontend Developer</h5>
-                                    <p class="timeline__timeframe">August 2016 - July 2019</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
                             </div>
+                        </div>
 
-                        </div> <!-- end timeline -->
-
-                    </div> <!-- end column -->
-
-                    <div class="column lg-6 tab-12">
-
-                        <h2 class="text-pretitle" data-animate-el>
-                            Education
-                        </h2>
-
-                        <div class="timeline" data-animate-el>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">
-                                        University of Life</h3>
-                                        <h5 class="timeline__meta">Master in Graphic Design</h5>
-                                        <p class="timeline__timeframe">April 2015</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
+                        <div class="timeline__block">
+                            <div class="timeline__bullet"></div>
+                            <div class="timeline__header">
+                                <h4 class="timeline__title">School of Cool Designers</h4>
+                                <h5 class="timeline__meta">B.A. Degree in Graphic Design</h5>
+                                <p class="timeline__timeframe">August 2012</p>
                             </div>
-
-                            <div class="timeline__block">
-                                <div class="timeline__bullet"></div>
-                                <div class="timeline__header">
-                                    <h4 class="timeline__title">School of Cool Designers</h4>
-                                    <h5 class="timeline__meta">B.A. Degree in Graphic Design</h5>
-                                    <p class="timeline__timeframe">August 2012</p>
-                                </div>
-                                <div class="timeline__desc">
-                                    <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                                </div>
+                            <div class="timeline__desc">
+                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
                             </div>
+                        </div>
 
-                        </div> <!-- end timeline -->
+                    </div> <!-- end timeline -->
 
-                    </div> <!-- end column -->
+                </div> <!-- end column -->
 
 
-                </div> <!-- end about-timelines -->
+            </div> <!-- end about-timelines -->
 
             </section> <!-- end s-about -->
             <!-- ### works
