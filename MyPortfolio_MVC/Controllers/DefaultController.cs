@@ -7,6 +7,9 @@ using System.Web.Mvc;
 
 namespace MyPortfolio_MVC.Controllers
 {
+
+    [AllowAnonymous] // Herkes Buraya Erişebilir .
+
     public class DefaultController : Controller
     {
         MyPortfolioDbEntities db = new MyPortfolioDbEntities();
@@ -34,5 +37,12 @@ namespace MyPortfolio_MVC.Controllers
             var values = db.TblExperiences.ToList();
             return PartialView(values);
         }
+
+        public PartialViewResult DefaultEducation()
+        {
+            var values = db.TblEducations.ToList();
+            return PartialView(values);
+        }
+
     }
 }

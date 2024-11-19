@@ -1,0 +1,31 @@
+﻿@model List<MyPortfolio_MVC.Models.TblEducation>
+<div class="column lg-6 tab-12">
+
+    <h2 class="text-pretitle" data-animate-el>
+        Eğİtİmİm
+    </h2>
+
+    <div class="timeline" data-animate-el>
+
+    @foreach (var item in Model)
+    {
+
+
+        <div class="timeline__block"> 
+            <div class="timeline__bullet"></div> 
+            <div class="timeline__header">
+                <h4 class="timeline__title">
+                    @item.SchoolName</h4>
+                    <h5 class="timeline__meta">@item.Departman</h5>
+                    <p class="timeline__timeframe">@item.StartDate.ToString("Y") - @(item.EndDate.HasValue? item.EndDate.Value.ToString("Y") : "Devam Ediyor")</p>
+            </div>
+            <div class="timeline__desc">
+                <p>@item.Description</p>
+            </div>
+        </div> 
+    }
+        
+
+    </div> <!-- end timeline -->
+
+</div>

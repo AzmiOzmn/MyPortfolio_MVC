@@ -10,7 +10,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Luther</title>
+    <title>Azmi</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -68,11 +68,11 @@
             <div class="row wide main-nav-wrap">
                 <nav class="column lg-12 main-nav">
                     <ul>
-                        <li><a href="index.html" class="home-link">Azmi Özmen.</a></li>
-                        <li class="current"><a href="#intro" class="smoothscroll">Giriş</a></li>
+                        <li><a href="current" class="home-link">Azmİ Özmen</a></li>
                         <li><a href="#about" class="smoothscroll">Hakkımda</a></li>
-                        <li><a href="#works" class="smoothscroll">Projelerim</a></li>
-                        <li><a href="#contact" class="smoothscroll">İletişim</a></li>
+                        <li><a href="#experience" class="smoothscroll">Deneyİmlerİm</a></li>
+                        <li><a href="#works" class="smoothscroll">Projelerİm</a></li>
+                        <li><a href="#contact" class="smoothscroll">İletİşİm</a></li>
                     </ul>
                 </nav>
             </div>
@@ -128,42 +128,7 @@
                 @Html.Action("DefaultExperience")  <!-- end column -->
 
 
-                <div class="column lg-6 tab-12">
-
-                    <h2 class="text-pretitle" data-animate-el>
-                        Education
-                    </h2>
-
-                    <div class="timeline" data-animate-el>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <h4 class="timeline__title">
-                                    University of Life</h3>
-                                    <h5 class="timeline__meta">Master in Graphic Design</h5>
-                                    <p class="timeline__timeframe">April 2015</p>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline__block">
-                            <div class="timeline__bullet"></div>
-                            <div class="timeline__header">
-                                <h4 class="timeline__title">School of Cool Designers</h4>
-                                <h5 class="timeline__meta">B.A. Degree in Graphic Design</h5>
-                                <p class="timeline__timeframe">August 2012</p>
-                            </div>
-                            <div class="timeline__desc">
-                                <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                            </div>
-                        </div>
-
-                    </div> <!-- end timeline -->
-
-                </div> <!-- end column -->
+                @Html.Action("DefaultEducation") <!-- end column -->
 
 
             </div> <!-- end about-timelines -->

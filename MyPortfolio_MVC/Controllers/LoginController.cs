@@ -8,6 +8,7 @@ using System.Web.Security;
 
 namespace MyPortfolio_MVC.Controllers
 {
+    [AllowAnonymous] // Herkes Buraya Erişebilir .
     public class LoginController : Controller
     {
 
@@ -29,7 +30,8 @@ namespace MyPortfolio_MVC.Controllers
             }
 
             FormsAuthentication.SetAuthCookie(value.Email,false);
-            Session["nameSurname"]=value.Name+" "+value.Surname;
+          
+            Session["email"]=value.Email;
             return RedirectToAction("Index","Category");
             
         }
