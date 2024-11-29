@@ -460,6 +460,9 @@
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Default\DefaultEducation.cshtml" />
     <Content Include="Views\Profile\Index.cshtml" />
+    <Content Include="Views\Default\DefaultProjects.cshtml" />
+    <Content Include="Views\Default\DefaultAbouts.cshtml" />
+    <Content Include="Views\Default\DefaultTestimonials.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

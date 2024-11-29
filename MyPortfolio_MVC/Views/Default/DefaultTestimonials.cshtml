@@ -1,0 +1,29 @@
+﻿@model List<MyPortfolio_MVC.Models.TblTestimonial>
+
+<div class="row testimonials">
+    <div class="column lg-12" data-animate-block>
+
+        <div class="swiper-container testimonial-slider" data-animate-el>
+
+            <div class="swiper-wrapper">
+                @foreach (var item in Model)
+                {
+                    <div class="testimonial-slider__slide swiper-slide">
+                        <div class="testimonial-slider__author">
+                            <img src="@item.ImageUrl" alt="Author image" class="testimonial-slider__avatar">
+                            <cite class="testimonial-slider__cite">
+                                <strong>@item.NameSurname</strong>
+                                <span>@item.Title</span>
+                            </cite>
+                        </div>
+                        <p>@item.Comment</p>
+                    </div> <!-- end testimonial-slider__slide -->
+                }
+            </div> <!-- end swiper-wrapper -->
+
+            <div class="swiper-pagination"></div>
+
+        </div> <!-- end swiper-container -->
+
+    </div> <!-- end column -->
+</div>

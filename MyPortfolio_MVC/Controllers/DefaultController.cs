@@ -44,5 +44,23 @@ namespace MyPortfolio_MVC.Controllers
             return PartialView(values);
         }
 
+        public PartialViewResult DefaultProjects()
+        {
+            var values = db.TblProjects.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultAbouts()
+        {
+            var values = db.TblAbouts.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult DefaultTestimonials()
+        {
+            var values = db.TblTestimonials.ToList();
+            return PartialView(values);
+        }
+
     }
 }
