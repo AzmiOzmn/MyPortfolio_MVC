@@ -62,5 +62,21 @@ namespace MyPortfolio_MVC.Controllers
             return PartialView(values);
         }
 
+        [HttpGet]
+        public ActionResult SendMessage() 
+        {
+            return PartialView();
+        }
+
+        [HttpPost]
+        public ActionResult SendMessage(TblMessage model)
+        {
+            model.IsRead = false;
+            db.TblMessages.Add(model);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+
+        }
+
     }
 }

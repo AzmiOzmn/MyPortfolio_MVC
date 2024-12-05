@@ -1,33 +1,33 @@
 ﻿@model  List<MyPortfolio_MVC.Models.TblAbout>
 <div class="row about-info wide" data-animate-block>
-
-    @foreach (var item in Model)
-    {
-
-
-        <div class="column lg-6 md-12 about-info__pic-block">
-            <img src="/azmi.jpg" style="width:500px;height:800px"
-                 srcset="/images/azmi.jpg" alt="" class="about-info__pic" data-animate-el>
-        </div>
+    
+        @foreach (var item in Model)
+        {
 
 
-
-
-
-        <div class="column lg-6 md-12">
-            <div class="about-info__text">
-
-                <h2 class="text-pretitle with-line" data-animate-el>
-                    @item.Title
-                </h2>
-                <p class="attention-getter" data-animate-el>
-                    @item.Description
-                </p>
-                <a href="@item.CvUrl" class="btn btn--medium u-fullwidth" data-animate-el> CV'yi İndir</a>
-
+            <div class="column lg-6 md-12 about-info__pic-block">
+                <img src="@item.ImageUrl" style="width:500px;height:800px"
+                     srcset="@item.ImageUrl" , @item.ImageUrl alt="" class="about-info__pic" data-animate-el>
             </div>
-        </div>
-    }
 
 
+
+
+
+            <div class="column lg-6 md-12">
+                <div class="about-info__text">
+
+                    <h2 class="text-pretitle with-line" data-animate-el>
+                        @item.Title
+                    </h2>
+                    <p class="attention-getter" data-animate-el>
+                        @item.Description
+                    </p>
+                    <a href="@item.CvUrl" class="btn btn--medium u-fullwidth" data-animate-el> CV'yi İndir</a>
+
+                </div>
+            </div>
+        }
+
+   
 </div>

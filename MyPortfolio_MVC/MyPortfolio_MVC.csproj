@@ -134,6 +134,7 @@
     <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Global.asax.cs">
@@ -463,6 +464,9 @@
     <Content Include="Views\Default\DefaultProjects.cshtml" />
     <Content Include="Views\Default\DefaultAbouts.cshtml" />
     <Content Include="Views\Default\DefaultTestimonials.cshtml" />
+    <Content Include="Views\Default\SendMessage.cshtml" />
+    <Content Include="Views\Message\Index.cshtml" />
+    <Content Include="Views\Message\MessageDetail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
