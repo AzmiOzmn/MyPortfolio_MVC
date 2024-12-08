@@ -7,7 +7,7 @@ Projede şu teknolojilerden faydalanılmıştır:
 
 - **MVC**
 - **Entity Framework**
-- **MySQL**
+- **SQL**
 - **DB First**
 - **Authorise**
 
