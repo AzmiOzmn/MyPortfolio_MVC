@@ -1,6 +1,6 @@
 # MyPortfolio
 
-Merhaba, bu proje, MVC mimarisi kullanılarak geliştirilmiş bir portföy yönetim uygulamasıdır. Kullanıcılar için sade bir arayüz sunulurken, admin paneli sayesinde içerikler dinamik bir şekilde düzenlenebilmektedir.
+Merhaba, bu proje, MVC mimarisi kullanılarak geliştirilmiş bir portfolio uygulamasıdır. Kullanıcılar için sade bir arayüz sunulurken, admin paneli sayesinde içerikler dinamik bir şekilde düzenlenebilmektedir.
 
 ## Kullanılan Teknolojiler
 Projede şu teknolojilerden faydalanılmıştır:
