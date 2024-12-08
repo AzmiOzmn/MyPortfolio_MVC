@@ -55,7 +55,11 @@ Aşağıda proje ile ilgili ekran görüntülerini bulabilirsiniz:
 14) **Mesajlar**
     ![Gelen Mesajlar](https://github.com/user-attachments/assets/fa215d7c-af64-4a1b-85a3-f29ef35d2b19)
 15) **Okunan Mesajlar**
- ![Okunan Mesajlar](https://github.com/user-attachments/assets/5226291f-261d-425f-881c-218a38a8619b)
+ ![okunanmesaj2](https://github.com/user-attachments/assets/57bee3ac-b6bc-40a0-bbc8-e5ea599762b8)
+16) **Anasayfam**
+    ![localhost_44351_Default_Index](https://github.com/user-attachments/assets/96845a77-7e45-4d65-9948-f4dbec083e10)
+
+
 
 
     
