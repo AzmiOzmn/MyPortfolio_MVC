@@ -1,0 +1,23 @@
+﻿@model MyPortfolio_MVC.Models.TblBanner
+@{
+    ViewBag.Title = "CreateBanner";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2 style="color:tan">Banner Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Başlık</label>
+    @Html.TextAreaFor(x => x.Title, new { @class = "form-control" })
+    <br />
+
+    <label>Açıklama</label>
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+    <label>Gösterilsin mi?</label>
+    @Html.DropDownListFor(x => x.IsShow, (IEnumerable<SelectListItem>)ViewBag.IsShowList, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Kaydet</button>
+</form>

@@ -63,7 +63,7 @@ namespace MyPortfolio_MVC.Controllers
         }
 
         [HttpGet]
-        public ActionResult SendMessage() 
+        public ActionResult SendMessage()
         {
             return PartialView();
         }
@@ -77,6 +77,20 @@ namespace MyPortfolio_MVC.Controllers
             return RedirectToAction("Index");
 
         }
+
+        public PartialViewResult SocialMedia()
+        {
+            var values = db.TblSocialMedias.ToList();
+            return PartialView(values);
+        }
+
+        public PartialViewResult Contacts()
+        {
+            var values = db.TblContacts.ToList();
+            return PartialView(values);
+        }
+
+        
 
     }
 }

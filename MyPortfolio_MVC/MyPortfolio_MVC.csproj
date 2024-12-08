@@ -128,15 +128,22 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
+    <Compile Include="Controllers\BannerController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\EducationController.cs" />
+    <Compile Include="Controllers\ExperienceController.cs" />
+    <Compile Include="Controllers\ExpertiseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\SocialMediaController.cs" />
+    <Compile Include="Controllers\TestimonialController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -467,6 +474,30 @@
     <Content Include="Views\Default\SendMessage.cshtml" />
     <Content Include="Views\Message\Index.cshtml" />
     <Content Include="Views\Message\MessageDetail.cshtml" />
+    <Content Include="Views\Testimonial\Index.cshtml" />
+    <Content Include="Views\Testimonial\CreateTestimonial.cshtml" />
+    <Content Include="Views\Testimonial\UpdateTestimonial.cshtml" />
+    <Content Include="Views\Default\SocialMedia.cshtml" />
+    <Content Include="Views\Default\Contacts.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\CreateAbout.cshtml" />
+    <Content Include="Views\About\UpdateAbout.cshtml" />
+    <Content Include="Views\Banner\Index.cshtml" />
+    <Content Include="Views\Banner\CreateBanner.cshtml" />
+    <Content Include="Views\Banner\UpdateBanner.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\CreateContact.cshtml" />
+    <Content Include="Views\Contact\UpdateContact.cshtml" />
+    <Content Include="Views\Experience\Index.cshtml" />
+    <Content Include="Views\Experience\CreateExperience.cshtml" />
+    <Content Include="Views\Experience\UpdateExperience.cshtml" />
+    <Content Include="Views\Expertise\Index.cshtml" />
+    <Content Include="Views\Expertise\CreateExpertise.cshtml" />
+    <Content Include="Views\Expertise\UpdateExpertise.cshtml" />
+    <Content Include="Views\SocialMedia\Index.cshtml" />
+    <Content Include="Views\SocialMedia\CreateSocialMedia.cshtml" />
+    <Content Include="Views\SocialMedia\UpdateSocialMedia.cshtml" />
+    <Content Include="Views\Message\ReadMessages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

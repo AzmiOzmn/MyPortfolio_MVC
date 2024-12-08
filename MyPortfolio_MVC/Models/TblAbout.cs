@@ -11,13 +11,21 @@ namespace MyPortfolio_MVC.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class TblAbout
     {
         public int AboutId { get; set; }
+
         public string ImageUrl { get; set; }
+
+        [Required(ErrorMessage = "Baþlýk boþ olamaz.")]
         public string Title { get; set; }
+
+        [Required(ErrorMessage = "Açýklama boþ olamaz.")]
         public string Description { get; set; }
+
         public string CvUrl { get; set; }
     }
 }
+

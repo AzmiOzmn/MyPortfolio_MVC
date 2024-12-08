@@ -1,0 +1,29 @@
+﻿﻿@model MyPortfolio_MVC.Models.TblExperience
+@{
+    ViewBag.Title = "CreateExperience";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Deneyim Oluştur</h2>
+
+<form method="post">
+
+    <label>Şirket Adı </label>
+    @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+    <br />
+    <label>Ünvan </label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Açıklama </label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+    <label>Başlangıç Tarihi </label>
+    <input type="date" name="StartDate" class="form-control" />
+    <br />
+    <label>Bitiş Tarihi </label>
+    <input type="date" name="EndDate" class="form-control" />
+    <br />
+
+    <button class="btn btn-outline-primary">Kaydet</button>
+
+</form>

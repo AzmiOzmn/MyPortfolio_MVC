@@ -38,12 +38,17 @@ namespace MyPortfolio_MVC.Controllers
         public PartialViewResult AdminLayoutNavbar()
         {
             var email = Session["email"].ToString();
-            var admin = db.TblAdmins.FirstOrDefault(x=>x.Email==email);
+            var admin = db.TblAdmins.FirstOrDefault(x => x.Email == email);
+
             ViewBag.nameSurname = admin.Name + " " + admin.Surname;
             ViewBag.image = admin.ImageUrl;
+            var okunmamısmesaj = db.TblMessages
+                                  .Where(a => (bool)!a.IsRead)
+                                  .OrderByDescending(a => a.IsRead)
+                                  .Take(3)
+                                  .ToList();
 
-            
-            return PartialView();
+            return PartialView(okunmamısmesaj);
         }
 
         public PartialViewResult AdminLayoutFooter()

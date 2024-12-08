@@ -1,0 +1,31 @@
+﻿@model MyPortfolio_MVC.Models.TblBanner
+@{
+    ViewBag.Title = "UpdateBanner";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Banner Güncelleme</h2>
+
+<form method="post">
+    @Html.HiddenFor(x => x.BannerId)
+    <label>Kategori Adı</label>
+    <label>Başlık</label>
+    @Html.TextAreaFor(x => x.Title, new { @class = "form-control" })
+    <br />
+
+    <label>Açıklama</label>
+    @Html.TextAreaFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+    <label>Gösterilsin mi?</label>
+    @Html.DropDownListFor(x => x.IsShow,
+        new List<SelectListItem>
+        {
+            new SelectListItem { Text = "Göster", Value = "true", Selected = (Model.IsShow == true) },
+            new SelectListItem { Text = "Gösterme", Value = "false", Selected = (Model.IsShow == false) }
+        },
+        new { @class = "form-control" })
+    <br />
+
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>

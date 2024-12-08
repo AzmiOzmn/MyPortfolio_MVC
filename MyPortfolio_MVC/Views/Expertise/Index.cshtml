@@ -1,0 +1,36 @@
+﻿@model List<MyPortfolio_MVC.Models.TblExpertis>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Uzmanlık Alanlarım</h2>
+<br>
+<table class="table table-bordered">
+
+    <tr>
+        <th>#</th>
+        <th>Adı</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ExpertiseId</td>
+            <td>@item.Title</td>
+            <td><a href="/Expertise/DeleteExpertise/@item.ExpertiseId" class="btn btn-outline-danger">Sil</a></td>
+            <td><a href="/Expertise/UpdateExpertise/@item.ExpertiseId" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+
+
+
+
+
+
+</table>
+<br>
+<a href="/Expertise/CreateExpertise" class="btn btn-success">Ekle</a>
+

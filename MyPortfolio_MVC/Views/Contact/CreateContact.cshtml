@@ -1,0 +1,19 @@
+﻿@model MyPortfolio_MVC.Models.TblContact
+@{
+    ViewBag.Title = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2 style="color:tan">İletişim Bilgisi Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>Telefon Numarası </label>
+    @Html.TextAreaFor(x => x.Phone, new { @class = "form-control" })
+    <br />
+    <label>Ünvanı</label>
+    @Html.TextAreaFor(x => x.Email, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Kaydet</button>
+</form>
+

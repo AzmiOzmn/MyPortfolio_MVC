@@ -1,0 +1,16 @@
+﻿@model MyPortfolio_MVC.Models.TblCategory
+@{
+    ViewBag.Title = "CreateCategory";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Yeni Uzmanlık Ekleme Sayfası</h2>
+
+<form method="post">
+    <label>
+        Uzmanlık Adı
+    </label>
+    <input type="text" name="Title" class="form-control">
+    <br>
+    <button class="btn btn-primary">Kaydet</button>
+</form>

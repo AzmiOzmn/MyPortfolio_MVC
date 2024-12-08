@@ -1,0 +1,29 @@
+﻿@model MyPortfolio_MVC.Models.TblAbout
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/AdminLayout/Layout.cshtml";
+}
+
+<h2>Hakkımda Sayfası</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <label>Resmi Yükleyin</label>
+    <input type="file" name="ImageFile" />
+    <br />
+    <br />
+    <label>CV Yükleyin</label>
+    <input type="file" name="CVFile" />
+    <br />
+    <br />
+    <label>Ünvanı</label>
+    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+    <br />
+    <label>Açıklama</label>
+    @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+    <br />
+
+    <button class="btn btn-outline-primary">Kaydet</button>
+</form>
+
+@Html.ValidationSummary(true)
